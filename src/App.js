@@ -1,9 +1,15 @@
 import logo from './logo.svg';
+import Navbar from './components/Navbar';
+import HeroCards from './components/HeroCards';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
+      {(window.location.hash === '#home' || window.location.hash === '' || window.location.hash === '#') && (
+        <HeroCards />
+      )}
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

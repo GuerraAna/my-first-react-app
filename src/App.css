@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding-top: 60px; /* leave space for fixed navbar */
 }
 
 .App-logo {
